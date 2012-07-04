@@ -17,7 +17,8 @@ CONN HEADER 6POS (2x3) .100" Right Angle Gold
 Mfg Part:		68021-106HLF
 URL:			http://search.digikey.com/us/en/products/68021-106HLF/609-3334-ND/1878477
 DigiKey O/H:		310
-Price @100:		$0.204
+Price @100:		$0.1999
+
 Mfg Part:		961206-5604-AR
 URL:			http://search.digikey.com/us/en/products/961206-5604-AR/3M9479-ND/2071520
 DigiKey O/H:		1,112

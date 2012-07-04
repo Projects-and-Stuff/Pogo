@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 7/3/2012 7:29:56 PM
+
+BeginCmp
+TimeStamp = /4FA6D7F4;
+Reference = P1;
+ValeurCmp = Header_2x3;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FADA8D4;
+Reference = P2;
+ValeurCmp = Header_2x5;
+IdModule  = PIN_ARRAY_5x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF37E04;
+Reference = P3;
+ValeurCmp = Pogo_2x3;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /4FF37E03;
+Reference = P4;
+ValeurCmp = Pogo_2x5;
+IdModule  = ;
+EndCmp
+
+EndListe

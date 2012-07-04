@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/6/2012 4:36:42 PM
+EESchema Schematic File Version 2  date 7/3/2012 7:28:32 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,13 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-EELAYER 43  0
+LIBS:Pogo-cache
+EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
-Title "Pogo"
-Date "6 may 2012"
+Title "Pogo - A simple programmer adapter for programming AVRs using Pogo pins"
+Date "3 jul 2012"
 Rev "1.0"
 Comp "Projects and Stuff LLC"
 Comment1 ""
@@ -43,22 +44,159 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Label 5050 3450 0    60   ~ 0
+MISO
+Text Label 5050 3350 0    60   ~ 0
+SCK
+Text Label 5050 3250 0    60   ~ 0
+RESET
+Text Label 5050 3150 0    60   ~ 0
+NC
+Text Label 5050 3050 0    60   ~ 0
+MOSI
+Text Label 4050 3450 2    60   ~ 0
+GND
+Text Label 4050 3350 2    60   ~ 0
+GND
+Text Label 4050 3250 2    60   ~ 0
+GND
+Text Label 4050 3150 2    60   ~ 0
+GND
+Text Label 4050 3050 2    60   ~ 0
+VCC
+Text Label 5050 2400 0    60   ~ 0
+RESET
+Text Label 5050 2300 0    60   ~ 0
+SCK
+Text Label 5050 2200 0    60   ~ 0
+MISO
+Text Label 4050 2400 2    60   ~ 0
+GND
+Text Label 4050 2300 2    60   ~ 0
+MOSI
+Text Label 4050 2200 2    60   ~ 0
+VCC
 $Comp
-L CONN_6 P?
-U 1 1 4FA6D806
-P 5350 3150
-F 0 "P?" V 5300 3150 60  0000 C CNN
-F 1 "CONN_6" V 5400 3150 60  0000 C CNN
-	1    5350 3150
+L CONN_3X2 P?
+U 1 1 4FF37E04
+P 4550 2350
+F 0 "P?" H 4550 2600 50  0000 C CNN
+F 1 "Pogo 2x3" H 4550 2200 40  0000 C CNN
+	1    4550 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_3X2 P?
-U 1 1 4FA6D7FB
-P 5350 2300
-F 0 "P?" H 5350 2550 50  0000 C CNN
-F 1 "CONN_3X2" V 5350 2350 40  0000 C CNN
-	1    5350 2300
+L CONN_5X2 P?
+U 1 1 4FF37E03
+P 4550 3250
+F 0 "P?" H 4550 3550 60  0000 C CNN
+F 1 "Pogo 2x5" H 4550 2950 50  0000 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3350 5050 3350
+Wire Wire Line
+	4950 3150 5050 3150
+Wire Wire Line
+	4150 3450 4050 3450
+Wire Wire Line
+	4150 3250 4050 3250
+Wire Wire Line
+	4150 3050 4050 3050
+Wire Wire Line
+	4950 2300 5050 2300
+Wire Wire Line
+	4150 2400 4050 2400
+Wire Wire Line
+	4150 2200 4050 2200
+Wire Wire Line
+	4150 2300 4050 2300
+Wire Wire Line
+	4950 2200 5050 2200
+Wire Wire Line
+	4950 2400 5050 2400
+Wire Wire Line
+	4150 3150 4050 3150
+Wire Wire Line
+	4150 3350 4050 3350
+Wire Wire Line
+	4950 3050 5050 3050
+Wire Wire Line
+	4950 3250 5050 3250
+Wire Wire Line
+	4950 3450 5050 3450
+Text Label 2150 3450 2    60   ~ 0
+MISO
+Text Label 2150 3350 2    60   ~ 0
+SCK
+Text Label 2150 3250 2    60   ~ 0
+RESET
+Text Label 2150 3150 2    60   ~ 0
+NC
+Text Label 2150 3050 2    60   ~ 0
+MOSI
+Text Label 3150 3450 0    60   ~ 0
+GND
+Text Label 3150 3350 0    60   ~ 0
+GND
+Text Label 3150 3250 0    60   ~ 0
+GND
+Text Label 3150 3150 0    60   ~ 0
+GND
+Text Label 3150 3050 0    60   ~ 0
+VCC
+Text Label 3150 2400 0    60   ~ 0
+GND
+Text Label 3150 2300 0    60   ~ 0
+MOSI
+Text Label 3150 2200 0    60   ~ 0
+VCC
+Text Label 2150 2400 2    60   ~ 0
+RESET
+Text Label 2150 2300 2    60   ~ 0
+SCK
+Text Label 2150 2200 2    60   ~ 0
+MISO
+Wire Wire Line
+	3050 3450 3150 3450
+Wire Wire Line
+	3050 3250 3150 3250
+Wire Wire Line
+	3050 3050 3150 3050
+Wire Wire Line
+	2250 3350 2150 3350
+Wire Wire Line
+	2250 3150 2150 3150
+Wire Wire Line
+	3050 2400 3150 2400
+Wire Wire Line
+	3050 2200 3150 2200
+Wire Wire Line
+	2250 2300 2150 2300
+Wire Wire Line
+	2250 2200 2150 2200
+Wire Wire Line
+	2250 2400 2150 2400
+Wire Wire Line
+	3050 2300 3150 2300
+Wire Wire Line
+	2250 3050 2150 3050
+Wire Wire Line
+	2250 3250 2150 3250
+Wire Wire Line
+	2250 3450 2150 3450
+Wire Wire Line
+	3050 3150 3150 3150
+Wire Wire Line
+	3050 3350 3150 3350
+$Comp
+L CONN_5X2 P?
+U 1 1 4FADA8D4
+P 2650 3250
+F 0 "P?" H 2650 3550 60  0000 C CNN
+F 1 "Header 2x5" H 2650 2950 50  0000 C CNN
+	1    2650 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -66,7 +204,7 @@ L CONN_3X2 P?
 U 1 1 4FA6D7F4
 P 2650 2350
 F 0 "P?" H 2650 2600 50  0000 C CNN
-F 1 "CONN_3X2" V 2650 2400 40  0000 C CNN
+F 1 "Header 2x3" H 2650 2200 40  0000 C CNN
 	1    2650 2350
 	1    0    0    -1  
 $EndComp
